@@ -1,0 +1,277 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>
+        Home Page
+    </title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+        .image{
+            background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9));
+            background-repeat: repeat;
+            height: auto;
+            width: 100%;
+            z-index: 10;
+            position: relative;
+            padding: 0px;
+        }
+        .image2{
+            background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(t4img11.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: auto;
+            width: auto;
+        }
+        .item1{
+            transition: all 1s linear;
+        }
+        #next, #prev{
+            color: white;
+            position: absolute;
+            z-index: 99999;
+            top:50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            margin: 0px 20px;;
+        }
+        #next{
+            right: 0%;
+        }
+        .pagination{
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%,-95%);
+            color: white;
+            cursor: pointer;
+            z-index: 99999;
+        }
+        .indexP{
+            margin-left: 5px;
+            cursor: pointer;
+            z-index: 99999;
+        }
+        .indexP:hover{
+            color: rgb(219, 139, 235);
+        }
+</style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" style="font-size: 200%; color: rgb(255,25,147); font-family: 'montserrat'"><b><i>OSLO</i></b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto" style="margin-right: 10%">
+      <li class="nav-item" style="margin-top: 7px; margin-right: 7px;">
+        <a class="nav-link-active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#2">Features</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#4">Reviews</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#5">SignUP</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-fluid image">
+        <div class="container-fluid" style="position: absolute; z-index: 100; margin-top: 10%; text-align: center;">
+            <b style="font-size: 200%; font-family: optima; color: white;">
+                Unleash Your Potiential</b>
+                <p style="color: white;">I'm a text box. Double click me to edit or to change the way I look. You can change the font, size, color, and so much more. For advance styling Option, click on "Learn More" Located on the right hand side of the text editing menu.
+            </p>
+            <br>
+            <a href="#" class="btn btn-outline-dark" role="button" style="color: white;border-radius: 50px; background-color: rgb(150,150,150);">Learn More</a>
+          </div>
+          <div style="position: relative;">
+         <img src="t4img21.jpg" alt="" class="item1" style="display: block; position: absolute; width:100%; height: 450px; z-index: 1; opacity: 0.15; ">
+         <img src="t4img22.jpg" alt="" class="item1" style="display: block; position: absolute; width:100%; height: 450px; z-index: 1; opacity: 00;">
+         <img src="t4img23.webp" alt="" class="item1" style="display: block; position: absolute; width:100%; height: 450px; z-index: 1; opacity: 0.00;">
+         <img src="t4img23.jpg" alt="" class="item1" style="display: block; position: absolute; width:100%; height: 450px; z-index: 1; opacity: 0.00;">
+         <img src="t4img22.jpg" alt="" class="item2" style="display: block; position: relative; width:100%; height: 450px; z-index: 1; opacity: 00;">
+         <i class="fas fa-angle-right fa-2x" aria-hidden="true" id="next"></i>
+         <i class="fas fa-angle-left fa-2x" aria-hidden="true" id="prev"></i>
+         <div class="pagination">
+            <i class="fa fa-circle indexP" id="0" aria-hidden="true"></i>
+            <i class="fa fa-circle indexP" id="1" aria-hidden="true"></i>
+            <i class="fa fa-circle indexP" id="2" aria-hidden="true"></i>
+            <i class="fa fa-circle indexP" id="3" aria-hidden="true"></i></div>
+</div>
+         </div>
+<div class="container">
+<section id="1">
+    <br><br>
+    <div class="row">
+    <div class="col-md">
+        <h4 style="color: rgb(120,120,120);">01//ABOUT</h4>
+        <p style="font-size: 200%; color: rgb(255,0,255); margin-top: 1px; font-style: oblique">We all want our jobs to run smoothly</p>
+        <p style="color: rgb(80,80,80);">I'm a text box. Double click me to edit or to change the way I look. You can change the font, size, color, and so much more. For advance styling Option, click on "Learn More" Located on the right hand side of the text editing menu.</p>
+        <a href="#" class="btn btn-outline-dark" role="button" style="border-radius: 50px;">Get Started</a>
+    </div>
+    <div class="col-md" style="align-self: center;">
+        <br>
+        <img src="t4img2.jpg" style="width: 250px; height: 200px; z-index: 1; position: absolute; border-radius: 50px;" alt="no">
+        <img src="t4img3.png" alt="no" style=" width: 200px; height: 150px;z-index: 5; position: relative; margin-left: 20%">
+    </div>
+</div>
+</section>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="container-fluid">
+    <section id="2">
+        <h4 style="color: rgb(120,120,120); text-align: center;">02//FEATURES</h4>
+        <p style="font-size: 150%; color: rgb(255,0,255);font-style: oblique; text-align: center;">Be on the same page</p><br>
+        <div class="row">
+            <div class="col-lg" style= "text-align: center;">
+                <i class='fas fa-layer-group' style='font-size:50px; color:rgb(224,33,138);'></i><br>
+                <p style="font-size: 150%; color: rgb(80,80,80);">Stay Organized</p>
+                <p style="font-size: 80%; color: rgb(80,80,80);">I'm a text box. Double click me to edit text <br> or to change the way I look.</p>
+            </div>
+            <div class="col-lg" style=" align-self: center; text-align: center;">
+                <i class='fas fa-skiing' style='font-size:50px; color:rgb(224,33,138);'></i><br>
+                <p style="font-size: 150%; color: rgb(80,80,80);">Be More Productive</p>
+                <p style="font-size: 80%; color: rgb(80,80,80);">I'm a text box. Double click me to edit text <br>or to change the way I look.</p>
+            </div>
+            <div class="col-lg" style=" align-self: center; text-align: center;">
+                <i class='fas fa-people-carry' style='font-size:50px; color:rgb(224,33,138);'></i><br>
+                <p style="font-size: 150%; color: rgb(80,80,80);"> Stay Collaborate</p>
+                <p style="font-size: 80%; color: rgb(80,80,80);">I'm a text box. Double click me to edit text<br> or to change the way I look.</p>
+            </div>
+</div>
+</section>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-md" style="align-self: center;">
+        <br>
+        <img src="t4img5.jpg" style="width: 250px; height: 200px; margin-left: 10%; z-index: 50; position: absolute; border-radius: 50px;" alt="no">
+        <img src="t4img3.png" alt="no" style=" width: 200px; height: 200px; z-index: 10; margin-top: 10%; position: relative;">
+    </div>
+    <div class="col-md">
+        <br>
+        <p style="font-size: 200%; color: rgb(255,0,255); margin-top: 1px; margin-right: 35%; font-style: oblique">Add Structure to your daily task.</p>
+        <h5 style="color: rgb(50,50,50);">To do lists</h5>
+        <p style="font-size: 70%; margin-right: 40%">I'm a text box. Double click me to edit or to change the way I look.</p>
+        <h5 style="color: rgb(50,50,50);">Track your meetings</h5>
+        <p style="font-size: 70%; margin-right: 40%">I'm a text box. Double click me to edit or to change the way I look.</p>
+    </div>
+</div>
+</div>
+<div class="container">
+    <section id="3">
+        <br><br>
+        <h4 style="color: rgb(120,120,120); text-align: center;">03//THE DASHBOARD</h4>
+        <p style="font-size: 150%; color: rgb(255,0,255);font-style: oblique; text-align: center;">Everything works better when it look better</p><br>
+        <img src="t4img6.png" alt="no" style=" width: 60%; height:auto; margin-left: 20%;">
+        <p style="font-size: 70%; text-align: center; margin-left: 10%; margin-right: 10%">I'm a text box. Double click me to edit or to change the way I look. You can change the font, size, color, and so much more. For advance styling Option, clicl on "Learn More" Located on the right hand side of the text editing menu.</p>
+    </section>
+</div>
+<div class="container">
+    <section id="4">
+        <br>
+        <h4 style="color: rgb(120,120,120); text-align: center;">04//REVIEWS</h4>
+        <p style="font-size: 150%; font-style: oblique; text-align: center;">A few words from our <span style="font-size: 130%; font-style: oblique; color: rgb(255,0,255);"> amazing </span> and trusting customers</p><br>
+        <div class="row">
+            <br>
+        <div class="col-lg" style="box-shadow: 5px 5px 5px 5px rgb(200,200,200); margin-left: 2px; border-radius: 30px;">
+            <p style="text-align: center; font-size: 80%">Best game of its kind on a mobile device hands down! Graphics are amazing for being on a mobile device! If I had an endless amount of letters to describe how worth it this game is I would be able to describe all the good things about it in more detail.</p>
+            <img src="t4img7.jpg" style="width: 70px; height: 70px; border-radius: 50px; margin-left: 40%" alt="n" >
+            <p style="text-align: center; font-size: 80%"> <b>Christopher Campbell</b></p>
+            <p style="text-align: center; font-size: 80%">Illustrator</p>
+        </div>
+        <br>
+        <div class="col-lg" style="box-shadow: 5px 5px 5px 5px rgb(200,200,200); margin-left: 2px; border-radius: 30px;">
+            <p style="text-align: center; font-size: 80%">If you ask me this game is one of the best of its kind. It has high quality graphics and the overall design of this game is perfect. It has a wide range of weapon customization and it's not a pay to win game which is really amazing.but the latest update.It has high quality.</p>
+            <img src="t4img10.jpg" style="width: 70px; height: 70px; border-radius: 50px; margin-left: 40%;" alt="n" >
+            <p style="text-align: center; font-size: 80%"> <b>Matheus Ferrero</b></p>
+            <p style="text-align: center; font-size: 80%">Social Media</p>
+        </div>
+        <br>
+        <div class="col-lg" style="box-shadow: 5px 5px 5px 5px rgb(200,200,200); margin-left: 2px;border-radius: 30px;"><p style="text-align: center; font-size: 80%">Absolutely incredible as close as you can get to any council game ever! I'm super grateful for this because I don't have a system right now I even spent $25 on a battle pass and I am the happiest real review from a real person and playing since beta. </p>
+            <img src="t4img8.jpeg" style="width: 70px; height: 70px; border-radius: 50px; margin-left: 40%" alt="n" >
+            <p style="text-align: center; font-size: 80%"> <b>Houcine Ncib</b></p>
+            <p style="text-align: center; font-size: 80%">Project Co-ordinator</p></div>
+            <br>
+        <div class="col-lg" style="box-shadow: 5px 5px 5px 5px rgb(200,200,200); margin-left: 2px; border-radius: 30px;">
+            <p style="text-align: center; font-size: 80%">It is a wonderful game with grate graphics and sound. Wonderful title and as great as the title. Its extremely high intense fights with great features in it there are a lot of maps in battle royal and as well as multi-player battles. Really hats off to the.Wonderful title.</p>
+            <img src="t4img9.jpg" style="width: 70px; height: 70px; border-radius: 50px; margin-left: 40%" alt="n" >
+            <p style="text-align: center; font-size: 80%"> <b>Tegan Mierle</b></p>
+            <p style="text-align: center; font-size: 80%">Project Guide</p>
+        </div>
+    </div>
+    </section>
+</div>
+<br><br>
+<div class="container-fluid">
+<section id="5">
+<div class="container-fluid" style="background-image: linear-gradient(to right, rgb(192, 13, 60), rgb(255,65,225)); width: 100%">
+    <br>
+<div class="row">
+    <div class="col" style="width: 80%">
+    <p style="font-size: 150%; margin-left:2%; font-family: noto;">Did you want to be notified when we launch?</p></div>
+    <div class="col" style="margin-left: 30%;">
+        <a href="#5" class="btn btn-outline-dark" role="button">SignUP Today</a></div>
+    </div>
+</div>
+<div class="container-fluid image2">
+    <br>
+<div class="row">
+    <div class="col">
+    <h4 style="color: rgb(200,200,200);">05//Sign UP</h4>
+    <p style="color: white; font-size: 200%; font-family: nota;"><b>Get Creative with this revolutionary tool.</b></p>
+    <p style="font-size: 80%; color: white;">I'm a text box. Double click me to edit or to change the way I look. You can change the font, size, color, and so much more. For advance styling Option, clicl on "Learn More" Located on the right hand side of the text editing menu.</p>
+</div>
+<div class="col">
+    <form action="/actionpage.php" style="z-index: 200; opacity: 1">
+        <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Name" ><br><br></div>
+            <div class="form-group">
+            <input type="text" id="email" name="email" placeholder="E-Mail@"><br><br></div>
+            <div class="form-group">
+            <input type="text" id="msg" name="msg" placeholder="Message" style="height: 50px;"><br><br></div>
+            <a href="" class="btn btn-outline-dark" role="button" style="color: white;">SUBMIT</a>
+    </form>
+</div>
+<br>
+</div>
+</div>
+</section>
+</div>
+<div class="container-fluid">
+    <br>
+    <div class="row">
+        <div class="col" style="align-self: center;">
+            <i class='fab fa-facebook' style='font-size:36px'></i>
+            &nbsp; &nbsp;
+            <i class='fab fa-instagram' style='font-size:36px'></i>
+            &nbsp; &nbsp;
+            <i class='fab fa-twitter' style='font-size:36px'></i>
+        </div>
+        <div class="col" style="align-self: center;">
+            <a class="navbar-brand" href="#" style="font-size: 200%; color: rgb(255,25,147); font-family: 'montserrat';"><b><i>OSLO</i></b></a>
+            <br><p style="color: red; font-size: 70%;"> By MOHAMMAD DANISH</p>
+        </div>
+        <div class="col" style="align-self: center;">
+            <a href="#2" style="font-size: 100%; color: rgb(40,40,40);">Features</a>
+            <a href="#4" style="font-size: 100%; color: rgb(40,40,40);">Reviews</a>
+            <a href="#5" style="font-size: 100%; color: rgb(40,40,40);">SignUP</a>
+        </div>
+</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
