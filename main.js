@@ -40,9 +40,9 @@ $('document').ready(function () {
 });
 function updateSlides(){
     for(let i=0;i<totalSlides;i++){
-        slides[i].style.opacity='0'}
+        slides[i].style.opacity='0'
+        $(`#${i}`).removeClass("active");
+    }
     slides[currentSlide].style.opacity='0.15';
-}
-function fun3(){
-    console.log('awegfs');
+    $(`#${currentSlide}`).addClass("active");
 }
