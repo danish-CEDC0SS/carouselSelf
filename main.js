@@ -1,5 +1,5 @@
 let currentSlide=0;
-let slides=document.getElementsByClassName('item1');
+let slides=$('.item1');
 totalSlides=slides.length;
 function  timer() {
     if(currentSlide==totalSlides-1)
@@ -40,9 +40,9 @@ $('document').ready(function () {
 });
 function updateSlides(){
     for(let i=0;i<totalSlides;i++){
-        slides[i].style.opacity='0'
+        slides.eq(i).css('opacity','0');
         $(`#${i}`).removeClass("active");
     }
-    slides[currentSlide].style.opacity='0.15';
+    slides.eq(currentSlide).css('opacity','0.15');
     $(`#${currentSlide}`).addClass("active");
 }
